@@ -3,3 +3,4 @@ pandas==2.0.3
 numpy>=1.24
 pymongo
 certifi
+pymongo==3.6
