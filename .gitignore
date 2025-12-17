@@ -1,2 +1,16 @@
 venv
 .env
+# =====================
+# ML Artifacts
+# =====================
+Artifacts/
+logs/
+*.pt
+*.pkl
+*.h5
+*.zip
+
+# Python
+__pycache__/
+venv/
+.env
