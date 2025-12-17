@@ -62,6 +62,11 @@ if __name__ == "__main__":
 
     DATABASE = "NIDAF"
     COLLECTION = "NetworkData"
+    
+    FILE_PATH_B = r"Network_data\url_data.csv"     # <-- ADD YOUR CNN DATASET HERE
+    DATABASE_B = "NIDAF"
+    COLLECTION_B = "URLTextData"                   # <-- NEW COLLECTION FOR CNN
+
 
     networkobj = NetworkDataExtract()
 
@@ -73,3 +78,9 @@ if __name__ == "__main__":
 
     no_of_records = networkobj.insert_data_mongodb(records, DATABASE, COLLECTION)
     print(no_of_records)
+    
+    records_B = networkobj.csv_to_json_converter(file_path=FILE_PATH_B)
+    print(f"[CNN Dataset] Total records: {len(records_B)}")
+
+    no_of_records_B = networkobj.insert_data_mongodb(records_B, DATABASE_B, COLLECTION_B)
+    print(f"[CNN Dataset] Records inserted: {no_of_records_B}")

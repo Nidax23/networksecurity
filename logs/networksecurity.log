@@ -1,0 +1,17 @@
+[2025-12-17 06:09:36,213] INFO - Starting Network Security Pipeline
+[2025-12-17 06:09:36,213] INFO - Running UCI tabular data ingestion
+[2025-12-17 06:10:07,476] INFO - Loaded data from MongoDB | Collection: NetworkData | Columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+[2025-12-17 06:10:07,484] INFO - Starting UCI tabular data ingestion
+[2025-12-17 06:10:08,008] INFO - UCI tabular ingestion completed
+[2025-12-17 06:10:08,012] INFO - UCI Train CSV: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\train.csv
+[2025-12-17 06:10:08,012] INFO - UCI Test CSV: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\test.csv
+[2025-12-17 06:10:08,012] INFO - Running URL text data ingestion
+[2025-12-17 06:11:21,289] INFO - Loaded data from MongoDB | Collection: URLTextData | Columns: ['url', 'type']
+[2025-12-17 06:11:21,290] INFO - Starting URL sequence ingestion (PyTorch)
+[2025-12-17 06:11:21,703] INFO - Converted URL types to binary labels
+[2025-12-17 06:11:41,448] INFO - PyTorch tensors saved successfully
+[2025-12-17 06:11:41,461] INFO - X_train.pt: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\dl\X_train.pt
+[2025-12-17 06:11:41,461] INFO - y_train.pt: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\dl\y_train.pt
+[2025-12-17 06:11:41,461] INFO - X_test.pt: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\dl\X_test.pt
+[2025-12-17 06:11:41,462] INFO - y_test.pt: Artifacts\12_17_2025_06_09_31\data_ingestion\ingested\dl\y_test.pt
+[2025-12-17 06:11:41,462] INFO - Data ingestion completed successfully

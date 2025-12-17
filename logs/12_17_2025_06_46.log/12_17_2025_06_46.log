@@ -1,0 +1,5 @@
+[2025-12-17 05:06:50,908] 10 root - INFO -Starting Network Security Pipeline
+[2025-12-17 05:06:50,908] 21 root - INFO -Running UCI tabular data ingestion
+[2025-12-17 05:07:09,535] 56 root - INFO -Data loaded from MongoDB
+[2025-12-17 05:07:09,536] 66 root - INFO -Starting UCI tabular data ingestion (SGD / PA ready)
+[2025-12-17 05:07:10,220] 103 root - INFO -UCI tabular ingestion completed (SGD & PA compatible)
