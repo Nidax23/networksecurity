@@ -12,3 +12,6 @@ logs/
 
 # Python
 __pycache__/
+# Artifacts
+Artifacts/
+artifacts/
